@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>METRICS</title>
+</head>
+<style type="text/css">
+    td{
+        padding: 8px 8px;
+        border: 1px solid black;
+    }
+
+</style>
+<body>
+
+<table>
+    <th>
+        <tr style="color:green;">
+            <td>ID</td>
+            <td>TIMESTAMP</td>
+            <td>TEMPERATURE</td>
+            <td>DURATION</td>
+        </tr>
+    </th>
+
+    {%for i in range(0, len)%}
+    <tr>
+        <td>{{metrics[i].id}}</td>
+        <td>{{metrics[i].timestamp}}</td>
+        <td>{{metrics[i].temperature}}</td>
+        <td>{{metrics[i].duration}}</td>
+    </tr>
+    {%endfor%}
+
+</table>
+
+</body>
+</html>

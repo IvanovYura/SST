@@ -57,7 +57,7 @@ def _get_connection(url):
 
     except psycopg2.OperationalError as e:
         logger.error(e)
-        sys.exit(1)
+        raise Exception(e)
 
 
 def _validate_columns(header):

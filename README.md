@@ -56,15 +56,8 @@ python -m unittest discover -s tests/ -v
 
 ## Comments
 
-1. My intention was mot to spend more than 4 hours for a task
-2. I understand that its better to use env variables in init.sh instead of hardcoding them
-3. My importer is not ideal, it would like to have it more flexible, to be able upload different CSVs, and with better validation
-4. There is no unit-tests for Importer, I understand it is important to have
-5. Actually usually I cover as much as I can, for this I use `coverage` module
-6. I tried to keep the service as simple as possible
-7. I knew how to get output by timestamp, but did not do it because of more code, more errors
-8. Instead I added `limit` parameter
-9. I did not write doc strings, because the code looks self-explanatory (maybe only for me...)
-10. I wrote only 2 unit tests for a service just to show, that I remember that it is important
-11. I did not cover a lot, because it is a coding task and see p.1
-12. I wanted to use Docker and Compose to setup environment by one command, but then I decided it is over-engineering for a code task (plus see p.1)
+1. Its better to use env variables in init.sh instead of hardcoding them
+2. Importer is not ideal, it would nice to have it more flexible, to be able upload different CSVs, and with better validation
+3. There is no unit-tests for Importer, I understand it is important to have
+4. TODO: get output by timestamp
+5. Instead I added `limit` parameter
